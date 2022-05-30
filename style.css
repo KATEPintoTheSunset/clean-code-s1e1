@@ -12,11 +12,11 @@ body {
   text-align: right;
 }
 
-.img-matrix {
+.info-wrapper__img {
   width: 100%;
 }
 
-.more-info {
+.info-wrapper__link {
   font-family: fantasy, cursive;
 }
 
@@ -54,14 +54,14 @@ h3 {
   list-style: none;
 }
 
-input,
-.btn{
+input{
   outline: none;
 }
 
-.btn {
+.list-wrapper__btn {
   background: none;
   border: 0px;
+  outline: none;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -69,13 +69,13 @@ input,
   cursor: pointer;
 }
 
-.btn:hover {  
+.list-wrapper__btn:hover {  
   color: #3a3a3a;
 }
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.list-wrapper__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-.input-text {
+.list-wrapper__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,12 +98,12 @@ label[for="new-task"] {
   color: #888;
 }
 
-.input-text:focus {
+.list-wrapper__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.list-wrapper__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -123,51 +123,47 @@ li {
   align-items: center;
 }
 
-li > * {
-  vertical-align: middle;
-}
-
-input[type="checkbox"] {
+.list-wrapper__input-checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.list-wrapper__label-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li >    input[type="text"] {
+.list-wrapper__input-text {
   width: 226px;
 }
 
-.ico{
+.list-wrapper__ico{
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.ico:hover {
+.list-wrapper__ico:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .list-wrapper__label-task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-li .input-text {
+li .list-wrapper__input-text {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode .list-wrapper__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.edit-mode .list-wrapper__label-task {
   display: none;
 }
